@@ -1,3 +1,12 @@
 body {
     background-color: #99b3ff;
 }
+
+.movies {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto;
+    background-color: dodgerblue;
+    padding: 10px;
+    width: 50px;
+  }
