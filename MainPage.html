@@ -3,56 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HomePage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MainPage.css">
 </head>
-<link rel="stylesheet" href="MainPage.css">
 <body>
-    
-    <div class="movies" id="MovviesAll">
 
-        <div class="Movie1" id="movie1"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/rmC3ZhIHHi4?playlist=rmC3ZhIHHi4&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie2" id="movie2"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/89OP78l9oF0?playlist=89OP78l9oF0&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie3" id="movie3"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/mcvLKldPM08?playlist=mcvLKldPM08&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie4" id="movie4"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/kmxLybfGNC4?playlist=kmxLybfGNC4&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie5" id="movie5"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/rBxcF-r9Ibs?playlist=rBxcF-r9Ibs&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie6" id="movie6"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/2QKg5SZ_35I?playlist=2QKg5SZ_35I&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie7" id="movie7"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/2o_NCvnpQ58?playlist=2o_NCvnpQ58&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie8" id="movie8"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/zwAM5UnGd2s?playlist=zwAM5UnGd2s&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie9" id="movie9"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/QF-oyCwaArU?playlist=QF-oyCwaArU&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
-        <div class="Movie10" id="movie10"><iframe width="500" height="350"
-        src="https://www.youtube.com/embed/ZSzeFFsKEt4?playlist=ZSzeFFsKEt4&loop=1&controls=0&autoplay=1">
-        </iframe></div>
-        
+    <div class="container">
+        <div class="left-section">
+            <div class="image-container" id="Movie1" 
+                 data-title="Spectral" 
+                 data-subtitle="Netflix" 
+                 data-description="Spectral is a 2016 Hungarian-American military science fiction action film co-written and directed by Nic Mathieu. Written with Ian Fried & George Nolfi, the film stars James Badge Dale as DARPA research scientist Mark Clyne, with Max Martini, Emily Mortimer, Clayne Crawford, and Bruce Greenwood in supporting roles.
+                 The film is set in a civil war-ridden Moldova as invisible entities slaughter any living being caught in their path. The film was released worldwide on December 9, 2016 on Netflix. On February 1, 2017, Netflix released a prequel graphic novel of the film called Spectral: Ghosts of War which was made available digitally through the website ComiXology." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">Spectral</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="/IMG/SPECTRALMOVIE.jpg" alt="Spectral" class="box-image" draggable="false">
+                    </div>
+                </div>
+            </div>
+            <div class="image-container" id="image2" 
+                 data-title="The Tomorrow War" 
+                 data-subtitle="The Tomorrow War" 
+                 data-description="The Tomorrow War is a 2021 American military science-fiction action film directed by Chris McKay, written by Zach Dean, and starring Chris Pratt. It was produced by David Ellison, Dana Goldberg, Don Granger, David S. Goyer, Jules Daly, and Adam Kolbrenner, with a supporting cast featuring Yvonne Strahovski, J. K. Simmons, Betty Gilpin, Sam Richardson, Edwin Hodge, Jasmine Mathews, Ryan Kiera Armstrong, and Keith Powers. It follows a mix of present-day soldiers and civilians sent into the future to fight and stop an evil alien army.
+                 Originally set for theatrical release by Paramount Pictures, the film's distribution rights were acquired by Amazon Studios due to the COVID-19 pandemic, and digitally released on July 2, 2021, via Prime Video. With a budget of US$200 million, the film was one of the most expensive films to debut on a streaming platform. The Tomorrow War received mixed reviews from critics, with praise for the concept, action sequences, and performances (particularly Pratt and Richardson), but criticism for its derivative execution. A sequel is in development." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">The Tomorrow War</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="/IMG/THETOMORROWWAR.jpg" alt="The Tomorrow War" class="box-image"draggable="false">
+                    </div>
+                </div>
+            </div>
 
+            <div class="image-container" id="image3" 
+                 data-title="The 5th Wave" 
+                 data-subtitle="The 5th Wave" 
+                 data-description="The 5th Wave is a 2016 American science fiction action film directed by J Blakeson from a screenplay by Susannah Grant, Akiva Goldsman and Jeff Pinkner, based on Rick Yancey's 2013 novel of the same name. The film stars Chloë Grace Moretz, Nick Robinson, Ron Livingston, Maggie Siff, Alex Roe, Maria Bello, Maika Monroe, and Liev Schreiber.
+                Development began in March 2012, when Columbia Pictures picked up the film rights to the trilogy of novels, with Graham King's production company GK Films and Tobey Maguire's Material Pictures. Filming took place in Atlanta, Georgia, from October 2014 to January 2015.
+                 The 5th Wave was released in the United States on January 22, 2016 by Columbia Pictures (via Sony Pictures Releasing). Despite negative reviews from critics, the film was moderately successful, grossing $109.9 million worldwide against a $38–54 million budget." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">The 5th Wave</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="/IMG/THEFITHWAVE.jpg" alt="The 5th Wave" class="box-image"draggable="false">
+                    </div>
+                </div>
+            </div>
+            <div class="image-container" id="image4" 
+                 data-title="Geostorm" 
+                 data-subtitle="Geostorm" 
+                 data-description="Geostorm is a 2017 American science-fiction disaster film directed, cowritten, and coproduced by Dean Devlin (in his feature directorial debut). The film stars Gerard Butler, Jim Sturgess, Abbie Cornish, Ed Harris, and Andy García. It follows a satellite designer who tries to save the world from a storm of epic proportions caused by malfunctioning climate-controlling satellites.
+                Principal photography began on October 20, 2014, in New Orleans, Louisiana. After poor test screenings, reshoots took place in December 2016 under executive producer Jerry Bruckheimer, writer Laeta Kalogridis, and new director Danny Cannon. To date, the film is the only co-production between Skydance Media and Warner Bros. Pictures.
+                 Geostorm was released in the United States on October 20, 2017, in all formats, and heavily underperformed at the box office, grossing only $221.6 million worldwide against a $120–130 million budget, losing Warner Bros. $71.6 million. The film was also widely well received by critics." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">Geostorm</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="/IMG/GEOSTORM.jpg" alt="Geostorm" class="box-image"draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container" id="image5" 
+                 data-title="the artists garden at giverny" 
+                 data-subtitle="Claude Monet 1900" 
+                 data-description="Monet's garden at Giverny, one of the most famous motifs in his work." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">the artists garden at giverny</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="../IMG/the_artists_garden_at_giverny.jpeg" alt="the artists garden at giverny" class="box-image"draggable="false">
+                    </div>
+                </div>
+            </div>
+            <div class="image-container" id="image6" 
+                 data-title="the garden at giverny" 
+                 data-subtitle="Claude Monet 1900" 
+                 data-description="Another perspective of Monet's famous garden at Giverny." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">the garden at giverny</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="../IMG/the-garden-at-giverny.jpeg" alt="the garden at giverny" class="box-image"draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container" id="image7" 
+                 data-title="the houses of parliament" 
+                 data-subtitle="Claude Monet 1904" 
+                 data-description="Monet's series on the Houses of Parliament in London." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">the houses of parliament</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="../IMG/the-houses-of-parliament.jpeg" alt="the houses of parliament" class="box-image"draggable="false">
+                    </div>
+                </div>
+            </div>
+            <div class="image-container" id="image8" 
+                 data-title="tulip fields near the hague" 
+                 data-subtitle="Claude Monet 1886" 
+                 data-description="Monet's vibrant painting of tulip fields near The Hague." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">tulip fields near the hague</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="../IMG/tulip-fields-near-the-hague.jpeg" alt="tulip fields near the hague" class="box-image"draggable="false">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container" id="image9" 
+                 data-title="water lily pond" 
+                 data-subtitle="Claude Monet 1890" 
+                 data-description="The famous Water Lily Pond in Monet's garden at Giverny." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">water lily pond</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="../IMG/water-lily-pond.jpeg" alt="water lily pond" class="box-image"draggable="false">
+                    </div>
+                </div>
+                <p class="box-small-text">Claude Monet 1890</p>
+            </div>
+            <div class="image-container" id="image10" 
+                 data-title="waterloo bridge" 
+                 data-subtitle="Claude Monet 1900" 
+                 data-description="Monet's depiction of Waterloo Bridge under various lighting conditions." 
+                 onclick="updateRightSection(this)">
+                <p class="box-title-left">waterloo bridge</p>
+                <div class="border-box">
+                    <div class="white-box">
+                        <img src="../IMG/waterloo_bridge.jpeg" alt="waterloo bridge" class="box-image"draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="split"></div>
+
+        <div class="right-section">
+            <div class="border-box">
+                <div class="white-box">
+                    <img src="../IMG/garden-at-vetheuil.jpeg" alt="garden-at-vetheuil" class="box-image"draggable="false">
+                </div>
+            </div>
+            <p class="box-title" id="right-title">Painting Name</p>
+            <p class="box-subtitle" id="right-subtitle">This is the subtitle or additional text.</p>
+            <p class="box-description" id="right-description">Painting info goes here.</p>
+        </div>
     </div>
+    
 
+
+        <!-- Popup for Edit -->
+        <div class="popup-overlay" id="popup-overlay">
+            <div class="popup">
+                <h2>Edit Paintings</h2>
+                <div class="popup-content">
+                    <div class="painting-list">
+                        <!-- List of checkboxes will be generated dynamically -->
+                    </div>
+                    <div class="popup-actions">
+                        <button onclick="applyChanges()">Apply</button>
+                        <button onclick="closeEditOverlay()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="MainPage.js"></script>
 </body>
-<script src="MainPage.js"></script>
 </html>
