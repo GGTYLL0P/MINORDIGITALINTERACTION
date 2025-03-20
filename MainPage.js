@@ -67,7 +67,5 @@ document.addEventListener('DOMContentLoaded', function () {
         let div = document.createElement('div');
         div.classList.add('painting-item');
         div.appendChild(label);
-
-        paintingList.appendChild(div);
     });
 });
