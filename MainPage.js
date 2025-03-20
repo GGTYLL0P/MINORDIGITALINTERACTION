@@ -23,7 +23,7 @@ function updateRightSection(imageContainer) {
     rightDescriptionElement.textContent = description;
 
     let whiteBox = document.querySelector('.right-section .white-box');
-    whiteBox.innerHTML = '';
+    whiteBox.innerHTML = ''; // Clear the existing content
 
     if (trailerUrl) {
         let iframe = document.createElement('iframe');
@@ -33,6 +33,7 @@ function updateRightSection(imageContainer) {
         iframe.setAttribute('frameborder', '0');
         iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
         iframe.setAttribute('allowfullscreen', '');
+        iframe.classList.add('responsive-iframe'); // Add the responsive-iframe class
         whiteBox.appendChild(iframe);
     } else {
         let img = document.createElement('img');
@@ -42,7 +43,6 @@ function updateRightSection(imageContainer) {
         whiteBox.appendChild(img);
     }
 }
-
 
 document.addEventListener('DOMContentLoaded', function () {
     let imageContainers = document.querySelectorAll('.left-section .image-container');
